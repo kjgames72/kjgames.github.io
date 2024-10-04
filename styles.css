@@ -1,0 +1,73 @@
+body {
+    background-color: black; /* Color de fondo negro */
+    color: white; /* Color del texto blanco */
+    font-family: Arial, sans-serif; /* Fuente Arial */
+    margin: 0; /* Sin margen */
+    padding: 0; /* Sin relleno */
+    text-align: center; /* Texto centrado */
+}
+
+header {
+    margin-top: 20px; /* Margen superior del encabezado */
+}
+
+#logo {
+    width: 200px; /* Ancho del logo */
+}
+
+.floating-img {
+    position: fixed; /* Posicionamiento fijo */
+    top: 50%; /* Centrado vertical */
+    transform: translateY(-50%); /* Ajuste para centrar verticalmente */
+    width: 150px; /* Ancho de las imágenes flotantes */
+    animation: float 3s ease-in-out infinite; /* Aplicar la animación */
+}
+
+#juegodemesa {
+    left: 0; /* Imagen del juego de mesa a la izquierda */
+}
+
+#promocionalcards {
+    right: 0; /* Imagen de cartas promocionales a la derecha */
+}
+
+/* Definición de la animación de flotación */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(-50%) translateY(0); /* Sin movimiento */
+    }
+    50% {
+        transform: translateY(-50%) translateY(-10px); /* Moverse hacia arriba */
+    }
+}
+
+#main-content {
+    margin-top: 100px; /* Margen superior para el contenido principal */
+}
+
+.info-links {
+    margin: 20px 0; /* Espacio vertical entre los enlaces */
+}
+
+a {
+    color: #00ff00; /* Color verde para los enlaces */
+    text-decoration: none; /* Sin subrayado por defecto */
+    font-size: 18px; /* Tamaño de fuente de los enlaces */
+}
+
+a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse sobre los enlaces */
+}
+
+#description {
+    margin-top: 50px; /* Margen superior para la descripción */
+    font-size: 16px; /* Tamaño de la fuente de la descripción */
+    width: 70%; /* Ancho de la descripción */
+    margin-left: auto; /* Centrar el contenido */
+    margin-right: auto; /* Centrar el contenido */
+}
+
+#qr {
+    margin-top: 20px; /* Margen superior para el QR */
+    width: 150px; /* Ancho del QR */
+}
